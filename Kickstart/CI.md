@@ -10,12 +10,13 @@
 For the first steps, we rely on [the open source project **GameCI**](https://game.ci/docs/github/getting-started).  
 You can follow the process on their website, here is an overview of what you'll have to do:  
 - Create a `.github/workflows` folder in your Unity project for your workflow definition
-- Request a Unity license. The license is needed for build, and we want to have it as well as the associated Unity email and password in Github secrets ot be used later on
+- Request a Unity license. The license is needed for build, and we want to have it as well as the associated Unity email and password in Github secrets ot be used later on.  
+We will have the secrets **UNITY_EMAIL**, **UNITY_LICENSE** and **UNITY_PASSWORD**
 - Now our workflows have everything they need to build the project
 
 Use our workflows to automatically build and deploy a WebGL project (so you can play test directly on a url, and download the built project if you want) and semi-automatically (= on demand) build linux/windows project
-- In Unity, go to **Project Settings**, **Player**, WebGL part, **Publishing Settings**, and set the **Compression Format** to **Gzip**. Save.
+- Github Page does not support compression. In Unity, go to **Project Settings**, **Player**, WebGL part, **Publishing Settings**, and set the **Compression Format** to **Disabled**. Save.
 - Copy the workflows you need in the `.github/workflows` folder:  
-  - `unity-webgl.yml` (build a WebGL app on every commit on `main` and upload it as an archive and on Github Pages)
-  - `unity-desktop.yml` (build a Windows and Linux app when you trigger the workflow)
+  - [`unity-webgl.yml`](./.github/workflows/unity-webgl.yml) (build a WebGL app on every commit on `main` and upload it as an archive and on Github Pages)
+  - [`unity-desktop.yml`](./.github/workflows/unity-desktop.yml) (build a Windows and Linux app when you trigger the workflow)
 - Enable GitHub Pages in the project settings, for the branch automatically created with the workflow
