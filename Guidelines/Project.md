@@ -22,3 +22,8 @@ Here is a good enough file structure we can use:
   * **Scenes**
   * **ScriptableObjects**: *Only the classes*
   * **Scripts**: *Structure the content of Scripts as best as you can*
+
+## Building an architecture around Scriptable Objects
+
+I believe we could really benefit from an architecture like that: right now *our games are not stable*.  
+[This page](./ScriptableObjectsArchitecture.md) explains what it means.
