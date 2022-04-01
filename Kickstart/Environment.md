@@ -16,14 +16,15 @@ If we use **Github**, you'll need to:
 Now for the game engine and editor itself:  
 - [Download the Unity Hub](https://unity.com/download) and install it
 - In the hub, **Installs** tab, **Add** a new version of Unity and select the one we're using  
-> We try to stay on the LTS versions unless we have a really good reason not to
+> We try to stay on the LTS versions unless we have a good reason not to
 - Within the **Projects** tab, **Add** one and look for the folder you previously pulled from Github
 
 ## VScode
 
 We usually work with VScode for our projects.  
 - You can [get it here](https://code.visualstudio.com/) and install it
+- You will need to install `dotnet`, `mono`, and the vscode extension `Unity Tools` ([source](https://code.visualstudio.com/docs/other/unity))
 - Once installed, open your Unity project with VScode (**Assets > Open C# Project**)
-- In Unity, go to **Edit > Preferences**, and in **External Tools**, check **Embedded packages** and **Local packages** before **Regenerate project files**
-![](./Environment_vscode.png)
+- In Unity, go to **Edit > Preferences**, and in **External Tools**, check **Embedded packages** and **Local packages** before **Regenerate project files**  
+![](./Environment_vscode.png)  
 *(Not entirely sure which ones we need tbh)*

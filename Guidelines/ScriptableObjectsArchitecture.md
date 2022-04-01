@@ -68,13 +68,19 @@ You don't even need to be a developper to be able to do so.
 ## What does it mean in our project?
 
 As a first step, we could rely a lot on scriptable objects of two kinds:  
+
 - **Variables**  
 *ex: player position, health, map data*  
 They are simply scriptable objects wrapping variables, that we can edit by accessing "`.Value`".  
 If a variable has to be edited by multiple components, it can be made into a scriptable object.  
+*[Here is an example for a very simple float variable SO](./FloatVariable.cs)*
+
 - **Event**
 *ex: player death, next level, stun player*  
 This allow communication between two different components. One submit an event, and another listen to it.  
+*Here are the examples we can use from Ryan Hipple:*
+  - [Game event](https://github.com/roboryantron/Unite2017/blob/master/Assets/Code/Events/GameEvent.cs)
+  - [Game event listener](https://github.com/roboryantron/Unite2017/blob/master/Assets/Code/Events/GameEventListener.cs)
 
 In our project, we could have this kind of file structure:
 - Assets  
