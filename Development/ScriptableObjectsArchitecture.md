@@ -99,6 +99,6 @@ In our project, we could have this kind of file structure:
       - `Vector2Variable.cs`
   - ...  
 
-We might have what we need with only a few generic scriptable objects; to be tested.  
+With only a few scriptable objects, we can have what we need for a game.  
 
 > Scriptable Objects do not necessarily need to be instantiated as files. You could create some at runtime.
