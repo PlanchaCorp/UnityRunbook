@@ -67,6 +67,11 @@ You don't even need to be a developper to be able to do so.
 
 ## What does it mean in our project?
 
+We will try to use the [Unity Atoms library](https://unity-atoms.github.io/unity-atoms/).  
+The following paragraphs are how we implemented such a system ourselves for LD50.  
+
+---
+
 As a first step, we could rely a lot on scriptable objects of two kinds:  
 
 - **Variables**  

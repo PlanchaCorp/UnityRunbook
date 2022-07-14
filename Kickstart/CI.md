@@ -1,6 +1,6 @@
 # Continuous integration with Github and Unity
 
-> ℹ️ We rely on those tools to continuously build and deploy the game:   
+> We rely on those tools to continuously build and deploy the game:   
 >- **Github Actions**
 >   - We use existing actions, most notably from `GameCI`
 >- **Github Pages** (static web server where the Webgl build is hosted)

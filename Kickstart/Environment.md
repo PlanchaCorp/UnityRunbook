@@ -22,9 +22,14 @@ Now for the game engine and editor itself:
 ## VScode
 
 We usually work with VScode for our projects.  
-- You can [get it here](https://code.visualstudio.com/) and install it
-- You will need to install `dotnet`, `mono`, and the vscode extension `Unity Tools` ([source](https://code.visualstudio.com/docs/other/unity))
-- Once installed, open your Unity project with VScode (**Assets > Open C# Project**)
-- In Unity, go to **Edit > Preferences**, and in **External Tools**, check **Embedded packages** and **Local packages** before **Regenerate project files**  
+- You will need to install `dotnet`, `mono` ([source](https://code.visualstudio.com/docs/other/unity)), and if needed `msbuild`
+- You can [get VScode here](https://code.visualstudio.com/) and install it
+  - Install the extensions **C#** and **Unity Tools**
+  - Within settings, disable the `Omnisharp: Use Modern Net` setting
+- In Unity, go to **Edit > Preferences**, and in **External Tools**
+  - Select the external script editor to your vscode, if not already set
+  - Check **Embedded packages** and **Local packages** before **Regenerate project files**  
+- Open your Unity project with VScode (**Assets > Open C# Project**)
+- Verify that code correction and completion work (try some `GameObject` autocompletion in a monobehaviour)
 ![](./Environment_vscode.png)  
 *(Not entirely sure which ones we need tbh)*
