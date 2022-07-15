@@ -29,6 +29,8 @@ Your player should now have a "*Input Action Asset*" attached (if not, bind it y
 
 It already has some controls set up. This is where you should add new controls.  
 
+> If you create your own control scheme, don't forget to add the proper devices  
+
 ---
 
 Now within a MonoBehaviour attached to the same GameObject, you can implement a method named **OnMove**, or **OnYourAction** with any action you created in the previous window.  
