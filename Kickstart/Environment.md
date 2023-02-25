@@ -25,7 +25,8 @@ We usually work with VScode for our projects.
 - You will need to install `dotnet`, `mono` ([source](https://code.visualstudio.com/docs/other/unity)), and if needed `msbuild`
 - You can [get VScode here](https://code.visualstudio.com/) and install it
   - Install the extensions **C#** and **Unity Tools**
-  - Within settings, disable the `Omnisharp: Use Modern Net` setting
+> **Warning**  
+> Within settings, disable the `Omnisharp: Use Modern Net` setting
 - In Unity, go to **Edit > Preferences**, and in **External Tools**
   - Select the external script editor to your vscode, if not already set
   - Check **Embedded packages** and **Local packages** before **Regenerate project files**  
